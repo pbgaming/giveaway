@@ -30,7 +30,7 @@ hours = 12;
   if(message.content.startsWith(prefix + "gstart")) { // الامر
  
     if(!message.guild.member(message.author).hasPermission('MANAGE_GUILD')) return message.channel.send(':heavy_multiplication_x:| **يجب أن يكون لديك خاصية التعديل على السيرفر**');
-    message.channel.send(`:eight_pointed_black_star:| **Send Name channel For the Giveaway**`).then(msg => {
+    message.channel.send(`:eight_pointed_black_star:| **Send Name channel For the giveaway**`).then(msg => {
       message.channel.awaitMessages(filter, {
         max: 1,
         time: 20000,
